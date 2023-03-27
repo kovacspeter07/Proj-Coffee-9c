@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/flicker-2");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,9 +8,9 @@
 
 body {
   height: 100vh;
-  background-color: #5f412b;
+  background-color: #704c32;
 }
-
+/* főoldal */
 img {
   max-width: 100%;
 }
@@ -22,6 +23,7 @@ img {
   transform: translateX(-70%);
   font-family: "Flicker", sans-serif;
   padding: 3%;
+  transition: all 0.2s ease-in-out;
 }
 .üdvözlés-háttér {
   font-size: 7vw;
@@ -32,11 +34,12 @@ img {
   background: linear-gradient(
     90deg,
     hsla(34, 34%, 60%, 1) 20%,
-    hsla(25, 38%, 27%, 1) 120%
+    hsl(24, 38%, 27%) 120%
   );
   font-family: "Flicker", sans-serif;
   padding: 3%;
   border-radius: 0.8vw;
+  transition: all 0.2s ease-in-out;
 }
 .cup-wrap {
   width: 27vw;
@@ -44,6 +47,7 @@ img {
   position: relative;
   left: 50%;
   top: 10%;
+  transition: all 0.2s ease-in-out;
 }
 
 .cup {
@@ -174,5 +178,101 @@ img {
     filter: blur(7px);
     transform: translateY(-80px) scale(1.2);
     opacity: 0;
+  }
+}
+/* menüpontok */
+.menüpontok {
+  background-color: #573c28;
+  font-size: 3em;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  position: absolute;
+  color: azure;
+  font-family: "Flicker", sans-serif;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.menüpontok:hover {
+  background-color: hsl(25, 37%, 18%);
+  transform: scale(1.1);
+}
+.menüpontok:active {
+  transform: scale(0.95);
+}
+.cím {
+  display: inline-block;
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  color: azure;
+}
+.címlink {
+  text-decoration: none;
+  color: azure;
+}
+.jobb-f {
+  top: 0;
+  right: 0;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+}
+.jobb-a {
+  bottom: 0;
+  right: 0;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+.bal-f {
+  top: 0;
+  left: 0;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+.bal-a {
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+}
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+@media only screen and (max-width: 1200px) {
+  .jobb-f {
+    top: 40%;
+    margin-top: 0;
+  }
+  .bal-f {
+    top: 40%;
+    margin-top: 0;
+  }
+  .üdvözlés {
+    font-size: 10vw;
+  }
+  .üdvözlés-háttér {
+    font-size: 10vw;
+  }
+  .cup-wrap {
+    width: 37.8vw;
+    height: 45.36vw;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .menüpontok {
+    font-size: 2em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .menüpontok {
+    font-size: 1.5em;
   }
 }
