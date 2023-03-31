@@ -276,3 +276,32 @@ img {
     font-size: 1.5em;
   }
 }
+#box {
+  text-align: center;
+}
+#kereső_háttér {
+  background-color: rgb(98, 98, 98);
+}
+#terület table {
+  border-collapse: collapse;
+  font-size: 150%;
+  font-family: san-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+#terület table td {
+  background-color: rgb(195, 195, 195);
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  min-height: 30px;
+  border: 1px solid black;    
+}
+button {
+  width: 100px;
+  height: 30px;
+  background-color:rgb(195, 195, 195);
+  color: black;
+  font-weight: bolder;
+  border-radius: 20px 20px 20px 20px;
+}
