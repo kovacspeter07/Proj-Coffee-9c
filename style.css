@@ -3,9 +3,7 @@
 @import url("https://fonts.cdnfonts.com/css/turpis");
 @import url("https://fonts.cdnfonts.com/css/libertinus-mono");
 @import url("https://fonts.cdnfonts.com/css/steamflix-montserrat");
-
-
-
+@import url("https://fonts.cdnfonts.com/css/im-fell-english-sc");
 * {
   padding: 0;
   margin: 0;
@@ -312,14 +310,45 @@ img {
   min-width: 30px;
   height: 30px;
   min-height: 30px;
-  border: 1px solid black;    
+  border: 1px solid black;
 }
 button {
   width: 100px;
   height: 30px;
-  background-color:rgb(195, 195, 195);
+  background-color: rgb(195, 195, 195);
   color: black;
   font-weight: bolder;
   border-radius: 20px 20px 20px 20px;
 }
 
+/* navbar */
+#neubar {
+  background: #fae8d2;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item .active {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
+  box-shadow: 4px 4px 8px #ddc1a0, -4px -4px 8px #f7e5cc;
+}
+#neubar .dropdown-menu a:hover {
+  color: #454545;
+}
+#neubar .nav-item {
+  margin: auto 4px;
+}
+#neubar a {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#neubar .dropdown-menu {
+  background: #545454;
+}
+a.navbar-brand {
+  color: #454545;
+}
+.nav-link {
+  font-size: 30px;
+  font-family: 'IM FELL English SC', sans-serif;
+}
