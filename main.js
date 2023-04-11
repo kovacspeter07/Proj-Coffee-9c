@@ -77,7 +77,7 @@ function addCellListeners(td, i, j) {
       if (this.flagged) {
           return;
       }
-      this.style.backgroundColor = 'lightGrey';
+      this.style.backgroundColor = '#9A7B4F';
   });
 
   td.addEventListener('mouseup', function(event) {
@@ -138,7 +138,7 @@ function handleCellClick(cell, i, j) {
       
   }
   else {
-      cell.style.backgroundColor = 'lightGrey';
+      cell.style.backgroundColor = '#9A7B4F';
       num_of_bombs = adjacentBombs(i, j);
       if (num_of_bombs) {
           cell.style.color = components.colors[num_of_bombs];
