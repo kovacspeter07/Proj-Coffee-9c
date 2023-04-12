@@ -225,7 +225,7 @@ const reactionTimeText = document.querySelector(
   ".end-screen .reaction-time-text"
 );
 const playAgainBtn = document.querySelector(".end-screen .play-again-btn");
-
+// reakció
 let timer;
 let greenDisplayed;
 let timeNow;
@@ -242,29 +242,29 @@ const init = () => {
 
 init();
 
-const setGreenColor = () => {
-  clickableArea.style.backgroundColor = "#32cd32";
+const setBrownColor = () => {
+  clickableArea.style.backgroundColor = "#946544";
   message.innerHTML = "Kattints most!";
   message.style.color = "#111";
-  greenDisplayed = true;
+  brownDisplayed = true;
   timeNow = Date.now();
 };
 
-const startGame = () => {
+const StartGame = () => {
   clickableArea.style.backgroundColor = "#c1121f";
-  message.innerHTML = "Várj a zöld színre.";
+  message.innerHTML = "Várj a barna színre.";
   message.style.color = "#fff";
 
   let randomNumber = Math.floor(Math.random() * 4000 + 3000);
-  timer = setTimeout(setGreenColor, randomNumber);
+  timer = setTimeout(setBrownColor, randomNumber);
 
   waitingForStart = false;
-  waitingForGreen = true;
+  waitingForBrown = true;
 };
 
 mainMenu.addEventListener("click", () => {
   mainMenu.classList.remove("active");
-  startGame();
+  StartGame();
 });
 
 const endGame = () => {
@@ -285,7 +285,7 @@ const endGame = () => {
 const displayReactionTime = (rt) => {
   clickableArea.style.backgroundColor = "#faf0ca";
   message.innerHTML = `<div class='reaction-time-text'>${rt} ms</div>Kattints a folytatáshoz.`;
-  greenDisplayed = false;
+  brownDisplayed = false;
   waitingForStart = true;
   scores.push(rt);
 
@@ -303,7 +303,7 @@ const displayTooSoon = () => {
 };
 
 clickableArea.addEventListener("click", () => {
-  if (greenDisplayed) {
+  if (brownDisplayed) {
     let clickTime = Date.now();
     let reactionTime = clickTime - timeNow;
     displayReactionTime(reactionTime);
@@ -311,11 +311,11 @@ clickableArea.addEventListener("click", () => {
   }
 
   if (waitingForStart) {
-    startGame();
+    StartGame();
     return;
   }
 
-  if (waitingForGreen) {
+  if (waitingForBrown) {
     displayTooSoon();
   }
 });
@@ -323,6 +323,6 @@ clickableArea.addEventListener("click", () => {
 playAgainBtn.addEventListener("click", () => {
   endScreen.classList.remove("active");
   init();
-  startGame();
+  StartGame();
 });
 
