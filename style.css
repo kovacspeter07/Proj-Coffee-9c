@@ -295,16 +295,16 @@ img {
   text-align: center;
 }
 #kereső_háttér {
-  background-color: rgb(98, 98, 98);
+  background-color: #704c32;;
 }
 #terület table {
   border-collapse: collapse;
   font-size: 150%;
-  font-family: san-serif;
   font-weight: bold;
   display: inline-block;
 }
 #terület table td {
+
   background-color: rgb(195, 195, 195);
   width: 30px;
   min-width: 30px;
@@ -312,14 +312,19 @@ img {
   min-height: 30px;
   border: 1px solid black;
 }
-button {
+
+.button {
+
   width: 100px;
   height: 30px;
-  background-color: rgb(195, 195, 195);
+  background-color: rgb(196, 164, 132);;
+
+
   color: black;
   font-weight: bolder;
   border-radius: 20px 20px 20px 20px;
 }
+
 
 /* navbar */
 #neubar {
@@ -352,3 +357,83 @@ a.navbar-brand {
   font-size: 30px;
   font-family: 'IM FELL English SC', sans-serif;
 }
+
+.kereső {
+  font-family: cursive;
+}
+/* reflex */
+.clickable-area {
+  height: 100vh;
+  width: 100%;
+  cursor: pointer;
+  background: limegreen;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.end-screen,
+.main-menu {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #0d3b66;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.main-menu.active,
+.end-screen.active {
+  display: grid;
+  place-items: center;
+}
+
+.main-menu {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 32px;
+}
+
+.main-menu h1 {
+  font-size: 70px;
+  margin: 8px 0;
+}
+
+.container p {
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 800;
+  margin: 0;
+}
+
+.end-screen h1 {
+  font-size: 30px;
+}
+
+.reaction-time-text {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.end-screen .play-again-btn {
+  border: none;
+  background: #faf0ca;
+  font-size: 20px;
+  padding: 8px 32px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
