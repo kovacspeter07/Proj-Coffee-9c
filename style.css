@@ -295,7 +295,7 @@ img {
   text-align: center;
 }
 #kereső_háttér {
-  background-color: #704c32;;
+  background-color: #704c32;
 }
 #terület table {
   border-collapse: collapse;
@@ -304,7 +304,6 @@ img {
   display: inline-block;
 }
 #terület table td {
-
   background-color: rgb(195, 195, 195);
   width: 30px;
   min-width: 30px;
@@ -314,17 +313,14 @@ img {
 }
 
 .button {
-
   width: 100px;
   height: 30px;
-  background-color: rgb(196, 164, 132);;
-
+  background-color: rgb(196, 164, 132);
 
   color: black;
   font-weight: bolder;
   border-radius: 20px 20px 20px 20px;
 }
-
 
 /* navbar */
 #neubar {
@@ -337,9 +333,7 @@ img {
   background: linear-gradient(145deg, #ffe7ca, #f5d7b2);
   box-shadow: 4px 4px 8px #ddc1a0, -4px -4px 8px #f7e5cc;
 }
-#neubar .dropdown-menu a:hover {
-  color: #454545;
-}
+
 #neubar .nav-item {
   margin: auto 4px;
 }
@@ -347,15 +341,15 @@ img {
   padding-left: 12px;
   padding-right: 12px;
 }
-#neubar .dropdown-menu {
-  background: #545454;
-}
-a.navbar-brand {
-  color: #454545;
-}
+
 .nav-link {
   font-size: 30px;
-  font-family: 'IM FELL English SC', sans-serif;
+  font-family: "IM FELL English SC", sans-serif;
+  color: #5b4f42 !important ;
+}
+.nav-link:hover {
+  color: #907e6a !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .kereső {
@@ -434,6 +428,27 @@ a.navbar-brand {
   letter-spacing: 4px;
   cursor: pointer;
   border-radius: 10px;
-
 }
-
+/* games.html */
+.játék1 {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #7b6854;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30%;
+  transform: translateX(-50%);
+}
+.játék2 {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #7b6854;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30%;
+  transform: translateX(50%);
+}
