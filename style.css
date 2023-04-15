@@ -502,6 +502,8 @@ img {
   border-radius: 50%;
   z-index: -1;
   transition: all 0.3s ease-in-out;
+  border: #573c28 3px solid;
+  transform: scale(0.9);
 }
 .játék2hátt {
   background-image: url(Források/Képek/aknakereső.PNG);
@@ -517,4 +519,146 @@ img {
   border-radius: 50%;
   z-index: -1;
   transition: all 0.3s ease-in-out;
+  border: #573c28 3px solid;
+  transform: scale(0.9);
+}
+
+.pálma1 {
+  position: fixed;
+  z-index: -2;
+  left: -20em;
+}
+.pálma2 {
+  position: fixed;
+  z-index: -2;
+  right: -20em;
+  transform: scaleX(-1);
+}
+.vonal1 {
+  width: 8em;
+  height: 150em;
+  background-color: hsl(24, 30%, 45%);
+  z-index: -5;
+  position: fixed;
+  transform: rotate(25deg);
+  left: 30%;
+  top: -20em;
+  animation: vonal1 30s linear infinite;
+}
+
+.vonal2 {
+  width: 8em;
+  height: 150em;
+  background-color: hsl(24, 30%, 55%);
+  z-index: -4;
+  position: fixed;
+  transform: rotate(25deg);
+  left: 20%;
+  top: -20em;
+  animation: vonal2 30s linear infinite;
+}
+.vonal3 {
+  width: 100vw;
+  height: 10em;
+  background-color: hsl(24, 30%, 60%);
+  z-index: -5;
+  position: fixed;
+  transform: rotate(0deg);
+  top: 20%;
+  animation: vonal3 30s linear infinite;
+}
+.vonal4 {
+  width: 100vw;
+  height: 6em;
+  background-color: hsl(24, 30%, 50%);
+  z-index: -5;
+  position: fixed;
+  transform: rotate(0deg);
+  top: 35%;
+  animation: vonal4 30s linear infinite;
+}
+
+@keyframes vonal1 {
+  0% {
+    background-color: hsl(24, 30%, 45%);
+  }
+
+  25% {
+    background-color: hsl(24, 30%, 55%);
+  }
+
+  50% {
+    background-color: hsl(24, 30%, 50%);
+  }
+
+  75% {
+    background-color: hsl(24, 30%, 60%);
+  }
+
+  100% {
+    background-color: hsl(24, 30%, 45%);
+  }
+}
+@keyframes vonal2 {
+  0% {
+    background-color: hsl(24, 30%, 55%);
+  }
+
+  25% {
+    background-color: hsl(24, 30%, 50%);
+  }
+
+  50% {
+    background-color: hsl(24, 30%, 60%);
+  }
+
+  75% {
+    background-color: hsl(24, 30%, 45%);
+  }
+
+  100% {
+    background-color: hsl(24, 30%, 55%);
+  }
+}
+@keyframes vonal3 {
+  0% {
+    background-color: hsl(24, 30%, 50%);
+  }
+
+  25% {
+    background-color: hsl(24, 30%, 60%);
+  }
+
+  50% {
+    background-color: hsl(24, 30%, 45%);
+  }
+
+  75% {
+    background-color: hsl(24, 30%, 55%);
+  }
+
+  100% {
+    background-color: hsl(24, 30%, 50%);
+  }
+}
+@keyframes vonal4 {
+  0% {
+    background-color: hsl(24, 30%, 60%);
+  }
+
+  25% {
+    background-color: hsl(24, 30%, 45%);
+  }
+
+  50% {
+    background-color: hsl(24, 30%, 55%);
+  }
+
+  75% {
+    background-color: hsl(24, 30%, 50%);
+  }
+
+  100% {
+    background-color: hsl(24, 30%, 60%);
+  }
 }
