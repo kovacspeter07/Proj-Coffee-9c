@@ -371,7 +371,7 @@ img {
 .end-screen,
 .main-menu {
   display: none;
-  position: fixed;
+  position: relative;
   height: 100vh;
   width: 100%;
   top: 0;
@@ -395,10 +395,11 @@ img {
 .container {
   max-width: 700px;
   padding: 0 32px;
+  margin-right: 20%;
 }
 
 .main-menu h1 {
-  font-size: 70px;
+  font-size: 80px;
   margin: 8px 0;
 }
 
@@ -436,10 +437,27 @@ img {
   background-color: #7b6854;
   padding: 50px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 30%;
-  transform: translateX(-50%);
+  top: 40%;
+  left: 25%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 250%;
+  transition: all 0.3s ease-in-out;
+}
+.játék1:hover {
+  color: #7b6854;
+  background-color: wheat;
+  transform: translateX(75px);
+}
+.játék1:hover + .játék1hátt {
+  transform: scale(1.8) translateX(-80px);
 }
 .játék2 {
   text-decoration: none;
@@ -447,8 +465,56 @@ img {
   background-color: #7b6854;
   padding: 50px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 30%;
-  transform: translateX(50%);
+  top: 40%;
+  right: 25%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 250%;
+  transition: all 0.3s ease-in-out;
+}
+.játék2:hover {
+  color: #7b6854;
+  background-color: wheat;
+  transform: translateX(75px);
+}
+.játék2:hover + .játék2hátt {
+  transform: scale(1.8) translateX(-80px);
+}
+
+.játék1hátt {
+  background-image: url(Források/Képek/reakció.PNG);
+  background-size: 100%;
+  background-position-x: -50px;
+  background-position-y: 20px;
+  padding: 50px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.játék2hátt {
+  background-image: url(Források/Képek/aknakereső.PNG);
+  background-size: 250%;
+  background-position-x: -125px;
+  background-position-y: -50px;
+  padding: 50px;
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
 }
