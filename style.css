@@ -186,11 +186,15 @@ img {
 }
 
 /* coffee-info */
-p {
+p,
+li {
   font-size: 20px;
   font-family: "Steamflix Montserrat", sans-serif;
 }
-
+.arabicarobusta {
+margin-bottom: 30px;
+margin-top: 20px;
+}
 h2 {
   font-family: "Turpis", sans-serif;
 }
@@ -208,7 +212,16 @@ h2 {
   float: right;
   width: 340px;
 }
-
+.img2 {
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+h3 {
+  font-family: "Turpis", sans-serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
 /* menüpontok */
 .menüpontok {
   background-color: #573c28;
