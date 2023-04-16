@@ -186,15 +186,42 @@ img {
 }
 
 /* coffee-info */
-p {
+p,
+li {
   font-size: 20px;
   font-family: "Steamflix Montserrat", sans-serif;
 }
-
+.arabicarobusta {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
 h2 {
   font-family: "Turpis", sans-serif;
 }
-
+.topmargin {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.leftmargin {
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img1 {
+  border-radius: 20px;
+  float: right;
+  width: 340px;
+}
+.img2 {
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+h3 {
+  font-family: "Turpis", sans-serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
 /* menüpontok */
 .menüpontok {
   background-color: #573c28;
@@ -345,6 +372,7 @@ img {
 .nav-link {
   font-size: 30px;
   font-family: "IM FELL English SC", sans-serif;
+
   color: #5b4f42 !important ;
 }
 .nav-link:hover {
@@ -430,6 +458,7 @@ img {
   cursor: pointer;
   border-radius: 10px;
 }
+
 /* games.html */
 .játék1 {
   text-decoration: none;
@@ -662,6 +691,7 @@ img {
     background-color: hsl(24, 30%, 60%);
   }
 }
+
 /* kvíz */
 .app {
   background: #c1a18b;
@@ -722,4 +752,31 @@ img {
 }
 .incorrect {
   background: #ff9393;
+
+
+.köszöntö {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 2em;
+  margin: 2em;
+  text-align: center;
+}
+.kép1 {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50% ;
+}
+.nev {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 4em;
+
+}
+.feladat {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 2em;
+
 }
