@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/x-icon" class="icon" href="Források/Képek/cup.png" />
-
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      class="icon"
+      href="Források/Képek/cup.png"
+    />
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-light" id="neubar">
@@ -48,5 +52,18 @@
         </div>
       </div>
     </nav>
+    <div class="app">
+      <h1>Mit tudsz a kávéról?</h1>
+      <div class="quiz">
+        <h2 id="question">Ide kerül a kérdés</h2>
+        <div id="answer-buttons">
+          <button class="btn">Válasz 1</button>
+          <button class="btn">Válasz 2</button>
+          <button class="btn">Válasz 3</button>
+        </div>
+        <button id="next-btn">Következő</button>
+      </div>
+    </div>
+    <script src="quiz.js"></script>
   </body>
 </html>
