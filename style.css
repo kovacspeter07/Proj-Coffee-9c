@@ -214,7 +214,7 @@ h2 {
 }
 .img2 {
   float: left;
-  width: 70px;
+  width: 60px;
   margin-right: 10px;
 }
 h3 {
@@ -753,7 +753,7 @@ img {
 .incorrect {
   background: #ff9393;
 
-
+}
 .köszöntö {
   color: wheat;
   font-family: "IM FELL English SC", sans-serif;
