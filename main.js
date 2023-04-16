@@ -325,10 +325,4 @@ playAgainBtn.addEventListener("click", () => {
   init();
   StartGame();
 });
-// Example JavaScript to capture and handle click event on element with negative z-index
-const maki = document.querySelector(".maki");
 
-maki.addEventListener("click", function () {
-  console.log("Element 2 clicked!");
-  // Add your click event handling logic here
-});

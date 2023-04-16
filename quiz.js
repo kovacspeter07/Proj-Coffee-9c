@@ -78,7 +78,6 @@ function showQuestion() {
   let currentQuestion = questions[currentQuestionIndex];
   let questionNo = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
@@ -118,7 +117,7 @@ function selectAnswer(e) {
 
 function showScore() {
   resetState();
-  questionElement.innerHTML = "Az elért pontszámod $score}.";
+  questionElement.innerHTML = `Az elért pontszámod ${score}.`;
   nextButton.innerHTML = "Próbáld újra!";
   nextButton.style.display = "block";
 }
