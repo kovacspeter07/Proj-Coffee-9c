@@ -186,15 +186,42 @@ img {
 }
 
 /* coffee-info */
-p {
+p,
+li {
   font-size: 20px;
   font-family: "Steamflix Montserrat", sans-serif;
 }
-
+.arabicarobusta {
+margin-bottom: 30px;
+margin-top: 20px;
+}
 h2 {
   font-family: "Turpis", sans-serif;
 }
-
+.topmargin {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.leftmargin {
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.img1 {
+  border-radius: 20px;
+  float: right;
+  width: 340px;
+}
+.img2 {
+  float: left;
+  width: 70px;
+  margin-right: 10px;
+}
+h3 {
+  font-family: "Turpis", sans-serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
 /* menüpontok */
 .menüpontok {
   background-color: #573c28;
@@ -345,11 +372,13 @@ img {
 .nav-link {
   font-size: 30px;
   font-family: "IM FELL English SC", sans-serif;
+
   color: #5b4f42 !important ;
 }
 .nav-link:hover {
   color: #907e6a !important;
   transition: all 0.3s ease-in-out;
+
 }
 
 .kereső {
@@ -429,6 +458,9 @@ img {
   letter-spacing: 4px;
   cursor: pointer;
   border-radius: 10px;
+
+}
+
 }
 /* games.html */
 .játék1 {
@@ -662,3 +694,4 @@ img {
     background-color: hsl(24, 30%, 60%);
   }
 }
+
