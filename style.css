@@ -192,8 +192,8 @@ li {
   font-family: "Steamflix Montserrat", sans-serif;
 }
 .arabicarobusta {
-margin-bottom: 30px;
-margin-top: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 h2 {
   font-family: "Turpis", sans-serif;
@@ -378,7 +378,6 @@ img {
 .nav-link:hover {
   color: #907e6a !important;
   transition: all 0.3s ease-in-out;
-
 }
 
 .kereső {
@@ -458,10 +457,8 @@ img {
   letter-spacing: 4px;
   cursor: pointer;
   border-radius: 10px;
-
 }
 
-}
 /* games.html */
 .játék1 {
   text-decoration: none;
@@ -695,3 +692,28 @@ img {
   }
 }
 
+.köszöntö {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 2em;
+  margin: 2em;
+  text-align: center;
+}
+.kép1 {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50% ;
+}
+.nev {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 4em;
+
+}
+.feladat {
+  color: wheat;
+  font-family: "IM FELL English SC", sans-serif;
+  font-size: 2em;
+}
